@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People of Aleph ID</title>
+    <!--- CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="./css/style.css"> 
+    <!--- ICONSCOUT STYLESHEET-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--- GOOGLE FONT (DM SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+<!----------------------------------- NAV ------------------------------------------------------>
+    <nav>
+        <div class="container nav_container">
+            <a href="Dashboard.html"><img class="logo" src="Images/Logo.svg" class="logo"></a>
+            <ul class="nav_items">
+                <li><a href="Search.html" class="selected">People of Aleph</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="nav_profile">
+                    <img class="avatar" src="Images/avatar2.png">
+                    <ul>
+                        <li><a href="Profile-1.html">Profile</a></li>
+                        <li><a href="User_Account.html">Account Settings</a></li>
+                        <li><a href="Index.html">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </div>
+    </nav>
+    
+<!----------------------------------- SEARCH BY ------------------------------------------------------>
+<div id="content-wrap">
+    <div class="search_by">
+        <input type="text" placeholder="Search name...">
+        
+        <div class="filter_by">
+            <p>or filter by</p>
+            
+            <div id="department" class="custom-select" style="width:100%;" onchange="selectFilter()">
+              <select>
+                <option value="0">Department</option>
+                <option value="1">Department</option>
+                <option value="2">Department 1</option>
+                <option value="3">Department 2</option>
+                <option value="4">Department 3</option>
+                <option value="5">Department 4</option>
+              </select>
+            </div>
+            
+            <div class="custom-select" style="width:100%;">
+              <select>
+                <option value="0">Projects</option>
+                <option value="1">Projects</option>
+                <option value="2">Project 1</option>
+                <option value="3">Project 2</option>
+                <option value="4">Project 3</option>
+                <option value="5">Project 4</option>
+              </select>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+<!----------------------------------- SEARCH RESULT ------------------------------------------------------>
+<div class="search_result">
+    <p id="result">abc</p>
+    
+    <div class="card_searchResult">
+        <div class="section_profile">
+            <img class="avatar2" src="Images/Avatar.png">
+            <div class="name_motto">
+                <div class="section_profile_title">
+                    <h3>Full Name</h3>
+                    <h5>Department</h5>
+                </div>
+                <p><i>“The big lesson in life, baby, is never be scared of anyone or anything.”</i></p>
+            </div>
+        </div>
+        
+        <div class="section_details">
+            <div class="details1">
+                <div class="detailsRow">
+                    <div class="title-sub">
+                        <h4>Phone 📱</h4>
+                        <p>Phone Number</p>
+                    </div> 
+                    <div class="title-sub">
+                        <h4>Birthday 🎂</h4>
+                        <p>Birthday</p>
+                    </div>
+                </div>
+                
+                <div class="detailsRow">
+                    <div class="title-sub">
+                        <h4>Email ✉️</h4>
+                        <p>Emailr</p>
+                    </div>
+                    <div class="title-sub">   
+                        <h4>Domicile 🏠</h4>
+                        <p>Domicile</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="title-sub">
+                <h4>Hobbies / Interests 👀</h4>
+                <p>Hobbies/Interests</p>
+            </div>
+            
+            <hr>
+            
+            <div class="title-sub">
+                <h4>Projects 💻</h4>
+                
+                <div class="projects_profile">
+                    <div class="dashboard-projectItems">
+                        <div class="project_logo_small">
+                            <img src="Images/Project_logo.svg">
+                        </div>
+                        <small>(2019 - Present)</small>
+                    </div>
+                    
+                    <div class="dashboard-projectItems">
+                        <div class="project_logo_small">
+                            <img src="Images/Project_logo.svg">
+                        </div>
+                        <small>(2019 - Present)</small>
+                    </div>
+                    
+                    <div class="dashboard-projectItems">
+                        <div class="project_logo_small">
+                            <img src="Images/Project_logo.svg">
+                        </div>
+                        <small>(2019 - Present)</small>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>
+    
+</div>
+    
+<!----------------------------------- FOOTER ----------------------------------------------------->
+    <footer>
+        <div class="main_content">
+            <h4>Aleph Labs Indonesia</h4>
+            <p>The largest office comprised of over 90 Alephians. With multi year client relationships with some of Indonesia’s most iconic brands, Aleph Indonesia provides a wide breadth of services ranging from UI / UX, Front End Development to Digital Marketing.</p>
+        </div>
+        
+        <div class="content_info">
+            <div class="content_infoInside">
+                <p class="Title">Office</p>
+                <p class="Subtitle">Centennial Tower 37th Floor Zone E,
+Jl. Gatot Subroto Kav 24-25,
+Jakarta Selatan, DKI Jakarta 12930. </p>
+            </div>
+            
+            <div class="content_infoInside">
+                <p class="Title">Contact</p>
+                <p>📞 +62 21 2920 1555</p>
+                <a href="mailto:indonesia@aleph-labs.com">📩 indonesia@aleph-labs.com</a>
+            </div>
+            
+            </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+ 
+</body>
+    
+    
+</html>

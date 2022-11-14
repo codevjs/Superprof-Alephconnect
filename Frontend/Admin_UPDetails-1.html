@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Profile Details</title>
+    <!--- CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--- ICONSCOUT STYLESHEET-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--- GOOGLE FONT (DM SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    
+<!----------------------------------- NAV ----------------------------------------------------->
+    <nav>
+        <div class="container nav_container">
+            <a href="Admin_UserProfile.html" style="margin-top: 0px">
+                <div class="header_small">
+                    <img src="Images/Icon-Back.svg">
+                    <h5>Profile Details</h5>
+                </div>
+            </a>
+            
+            <div class="action_button">
+                <button onclick="enableInput()" style="background: var(--color-bg)">
+                    <i class="uil uil-pen" style="color:var(--color-3); font-size: 20px"></i>
+                </button>
+                            
+            <div class="vl"></div>
+                            
+            <button onclick="confirmDialog()" style="background: var(--color-bg)">
+                <i class="uil uil-trash" style="color:var(--color-3); font-size: 20px"></i>
+            </button>
+            </div>
+        
+        </div>
+    </nav>
+    
+<!----------------------------------- HEADER BACK ----------------------------------------------------->
+<div id="content-wrap">
+    
+<!----------------------------------- TAB ----------------------------------------------------->
+    
+   <div class="tab">
+        <p class="selected">Aleph Info & Personal Data</p>
+        <p><a href="Admin_UPDetails-3.html">Leave Details</a></p>
+    </div>
+    
+<!----------------------------------- TAB CONTENT ----------------------------------------------------->    
+    <div class="content-tab">  
+        <div class="identity">
+            <form action="" method='post' class="editAvatar">
+                <img class="avatar2" src="Images/Avatar.png" id="newPict">
+                <div id="uploadAvatar" style="visibility: hidden;">
+                    <i class="uil uil-upload" style="font-size: 16px; color:var(--color-1);"></i>
+                    <label for="oldPict" style="padding-left: 8px;font-size: 16px; color:var(--color-1);">
+                        Change Picture
+                    </label>
+                </div>
+                <input type="file" id="oldPict" style="display:none;" />
+              </form>
+
+              <input class="inputHeader" type="text" placeholder="Full Name..." value="Full Name">
+            
+        
+        </div>
+        
+        <div class="form_set2">
+            <h4>Employee ID</h4>
+            <input type="text" placeholder="Employee ID" class="inputText" disabled>
+        </div>
+        
+        <div class="form_set_row">
+            <div class="form_set2">
+                <h4>Position</h4>
+                <input type="text" placeholder="Position" class="inputText" disabled>
+            </div>
+            
+            <div class="form_set2">
+                <h4>Department</h4>
+                <select name="department" id="department" class="inputText" disabled>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            
+            <div class="form_set2">
+                <h4>Date of Join</h4>
+                <input type="date" placeholder="DD/MM/YYYY" class="inputText" disabled>
+            </div>
+        </div>
+        
+        <div class="form_set2">
+            <h4>Aleph Email</h4>
+            <input type="email" placeholder="name@aleph.com" class="inputText" disabled>
+        </div>
+
+        <div class="form_set_row">
+            <div class="form_set2">
+                <h4>Gender</h4>
+                <select name="gender" id="gender" class="inputText" disabled>
+                    <option value="volvo">Select</option>
+                    <option value="volvo">Male</option>
+                    <option value="saab">Female</option>
+                </select>
+            </div>
+            
+            <div class="form_set2">
+                <h4>Religion</h4>
+                <select name="religion" id="religion" class="inputText" disabled>
+                    <option value="volvo">Select</option>
+                    <option value="volvo">Muslim</option>
+                    <option value="saab">Protestant</option>
+                    <option value="opel">Catholic</option>
+                    <option value="audi">Hindu</option>
+                    <option value="opel">Buddha</option>
+                    <option value="audi">Konghuchu</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form_set2">
+                <h4>Address</h4>
+                <input type="text" placeholder="Ex: Jl. Gatot Subroto No.kav 24-25, RT.2/RW.2, Karet Semanggi, Setiabudi" class="inputText" disabled>
+            </div>
+        
+        <div class="form_set_row">
+            <div class="form_set2">
+                <h4>Status</h4>
+                <input type="text" placeholder="TK" class="inputText" disabled>
+            </div>
+            
+            <div class="form_set2">
+                <h4>KTP</h4>
+                <input type="number" placeholder="Ex: 3201024707000202" class="inputText" disabled>
+            </div>
+        </div>
+        
+        <div class="form_set_row">
+            <div class="form_set2">
+                <h4>NPWP</h4>
+                <input type="number" placeholder="Ex: 3201024707000202" class="inputText" disabled>
+            </div>
+            
+            <div class="form_set2">
+                <h4>BPJS TK</h4>
+                <input type="number" placeholder="Ex: 3201024707000202" class="inputText" disabled>
+            </div>
+        </div>
+        
+        <div class="form_set_row">
+            <div class="form_set2">
+                <h4>BPJS Kesehatan</h4>
+                <input type="number" placeholder="Ex: 3201024707000202" class="inputText" disabled>
+            </div>
+            
+            <div class="form_set2">
+                <h4>Passport</h4>
+                <input type="number" placeholder="Ex: 3201024707000202" class="inputText" disabled>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    
+</div>
+ 
+<!----------------------------------- BOTTOM BUTTON ----------------------------------------------------->
+    <div class="bottom_button" id="btnBottom" style="visibility: hidden;">
+        <div class="action_button2">
+            <button class="btn_SecondarySmall" onclick="disableInput()">Cancel</button>
+            <button class="btn_PrimarySmall" onclick="disableInput()">Save</button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+</body>
+    
+    
+</html>
